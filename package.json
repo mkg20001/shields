@@ -2,7 +2,13 @@
   "name": "gh-badges",
   "version": "1.3.0",
   "description": "Official Shields.io badge library.",
-  "keywords": ["GitHub", "badge", "SVG", "image", "shields.io"],
+  "keywords": [
+    "GitHub",
+    "badge",
+    "SVG",
+    "image",
+    "shields.io"
+  ],
   "homepage": "http://shields.io",
   "bugs": {
     "url": "https://github.com/badges/shields/issues",
@@ -27,12 +33,17 @@
     "bower": "~1.7.9",
     "chrome-web-store-item-property": "~1.1.2",
     "json-autosave": "~1.1.1",
-    "xml2js": "~0.4.16"
+    "xml2js": "~0.4.16",
+    "snyk": "^1.189.0"
   },
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node test/test.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
-  "bin": { "badge": "./gh-badge.js" },
+  "bin": {
+    "badge": "./gh-badge.js"
+  },
   "files": [
     "badge.js",
     "README.md",
@@ -44,5 +55,6 @@
     "phantomjs-svg2png.js",
     "lru-cache.js",
     "logo"
-  ]
+  ],
+  "snyk": true
 }
