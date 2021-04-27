@@ -21,7 +21,7 @@
     "pdfkit": "~0.8.0",
     "phantomjs-prebuilt": "~2.1.13",
     "request": "~2.75.0",
-    "redis": "~2.6.2",
+    "redis": "~3.1.1",
     "camp": "~16.2.3",
     "semver": "~5.3.0",
     "bower": "~1.7.9",
